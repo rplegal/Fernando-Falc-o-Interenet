@@ -180,9 +180,11 @@ footer{
 
 <div class="card">
 <h2> Sugestões e Participação Popular</h2>
-<input type="text" id="nome" placeholder="Seu nome">
-<textarea id="sugestao" placeholder="Digite sua sugestão ou solicitação"></textarea>
-<button onclick="adicionarSugestao()">Enviar Manifestação</button>
+<form action="https://formspree.io/f/xaqlkwle" method="POST">
+<input type="text" name="nome" placeholder="Seu nome" required>
+<textarea name="mensagem" placeholder="Digite sua sugestão" required></textarea>
+<button type="submit">Enviar Manifestação</button>
+</form>
 <div id="listaSugestoes"></div>
 </div>
 
